@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Sklep z Farbami</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Minimalistyczny sklep z farbami</h1>
+  </header>
+  <main>
+    <section id="produkty">
+      <h2>Nasze farby</h2>
+      <div class="product-list">
+        <article class="product">
+          <h3>Farba Akrylowa</h3>
+          <p>Cena: 50 zł / litr</p>
+          <button class="buy-button" data-price="50">Kup teraz</button>
+        </article>
+        <article class="product">
+          <h3>Farba Lateksowa</h3>
+          <p>Cena: 70 zł / litr</p>
+          <button class="buy-button" data-price="70">Kup teraz</button>
+        </article>
+      </div>
+    </section>
+    <section id="kalkulator">
+      <h2>Kalkulator farby</h2>
+      <label for="area">Powierzchnia (m²):</label>
+      <input type="number" id="area" min="0" value="0">
+      <label for="coverage">Wydajność (m²/l):</label>
+      <input type="number" id="coverage" min="1" value="10">
+      <label for="price">Cena za litr (zł):</label>
+      <input type="number" id="price" min="0" value="50">
+      <button id="calculate">Oblicz</button>
+      <div id="result"></div>
+    </section>
+  </main>
+  <script src="scripts.js"></script>
+</body>
+</html>
